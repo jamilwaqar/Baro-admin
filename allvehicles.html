@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+<head>
+  <title>all vehicles</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!--Main Stylesheet -->
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+
+  <!-- MAIN PAGE CONTENT -->
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">BARO Dashboard
+          <span class="page-title-span"> | </span>
+          <span class="page-title-span"> Approved Vehicles </span>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <button id="signOutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+            Sign Out <i class="button-right-icon material-icons">account_circle</i>
+          </button>
+          <button id="home" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+            Home <i class="button-right-icon material-icons">home</i>
+          </button>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+
+
+  <div class="tablecontainer" align="center">
+
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+      <thead>
+        <tr>
+          <td>name.</td>
+          <td>license plate.</td>
+          <td>user.</td>
+          <td>picture.</td>
+          <td>approved?</td>
+        </tr>
+      </thead>
+      <tbody id="table_body">
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <script type="text/javascript">
+      document.getElementById("home").onclick = function () {
+          location.href = "index.html";
+      };
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBBMpS47fG_MAkujAKkt-EdgrFLCNm55wc",
+    authDomain: "baro-144e0.firebaseapp.com",
+    databaseURL: "https://baro-144e0.firebaseio.com",
+    projectId: "baro-144e0",
+    storageBucket: "baro-144e0.appspot.com",
+    messagingSenderId: "778023296859"
+  };
+  firebase.initializeApp(config);
+  var storage = firebase.storage();
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="allve.js"></script>
+
+  </body>
+</html>

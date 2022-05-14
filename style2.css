@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+
+}
+
+.page-title-span {
+  margin-left: 10px;
+}
+
+.button-right-icon {
+  margin-left: 10px;
+}
+
+.tablecontainer{
+ position: absolute;
+ z-index: 15;
+ top: 50%;
+ left: 50%;
+ margin: -250px 0 0 -400px;
+}

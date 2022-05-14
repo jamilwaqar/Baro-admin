@@ -1,0 +1,26 @@
+{
+  "name": "baro.com",
+  "version": "1.0.0",
+  "description": "Integrating Firebase",
+  "main": "index.html",
+  "dependencies": {
+    "datatables.net": "^1.10.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stshelton/Baro-admin-website.git"
+  },
+  "keywords": [
+    "firebase"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stshelton/Baro-admin-website/issues"
+  },
+  "homepage": "https://github.com/stshelton/Baro-admin-website#readme"
+}
